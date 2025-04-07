@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>猕猴桃检测数据索引</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background-color: #f8f8f8;
+        }
+        h2 {
+            color: #2e8b57;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 6px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #1a73e8;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>分选装置猕猴桃溯源数据</h2>
+    <ul>
+        <!-- 自动生成的链接 -->
+        <!-- 示例：<li><a href="202412100001/result.html">202412100001</a></li> -->
+        <script>
+            const list = document.querySelector("ul");
+            for (let i = 1; i <= 100; i++) {
+                const folderName = "20241210" + i.toString().padStart(4, '0');
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.href = folderName + "/result.html";
+                a.textContent = folderName;
+                a.target = "_blank";
+                li.appendChild(a);
+                list.appendChild(li);
+            }
+        </script>
+    </ul>
+</body>
+</html>
